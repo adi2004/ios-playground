@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites tests='5' failures='3'>
+  <testsuite name='QuizUITests.QuizUITests' tests='5' failures='3'>
+    <testcase classname='QuizUITests.QuizUITests' name='testDismissKeyboard' time='6.904'/>
+    <testcase classname='QuizUITests.QuizUITests' name='testDismissKeyboard2'>
+      <failure message='XCTAssertTrue failed - '>QuizUITests/QuizUITests.swift:60</failure>
+    </testcase>
+    <testcase classname='QuizUITests.QuizUITests' name='testDismissKeyboard3'>
+      <failure message='XCTAssertTrue failed - '>QuizUITests/QuizUITests.swift:68</failure>
+    </testcase>
+    <testcase classname='QuizUITests.QuizUITests' name='testGoToQuizViewController'>
+      <failure message='XCTAssertTrue failed - '>QuizUITests/QuizUITests.swift:42</failure>
+    </testcase>
+    <testcase classname='QuizUITests.QuizUITests' name='testSimpleRun' time='3.652'/>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimpleView" customModule="Collection_View" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="XY9-Zk-lXg" id="RQ8-UR-tme"/>
+                <outlet property="width" destination="aJg-EX-oqL" id="OLh-wI-uOv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SimpleView" customModule="Collection_View" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XY9-Zk-lXg">
+                    <rect key="frame" x="54" y="0.0" width="546" height="60"/>
+                    <color key="backgroundColor" red="0.72394007444381714" green="0.72727519273757935" blue="0.87941664457321167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="aJg-EX-oqL"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="u58-ra-Y1y">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="wW4-bR-QqX"/>
+                        <outlet property="delegate" destination="-1" id="QAW-A8-yG7"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5OU-V4-Zga">
+                    <rect key="frame" x="0.0" y="0.0" width="46" height="60"/>
+                    <color key="backgroundColor" red="0.0" green="0.67213344573974609" blue="0.36170309782028198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="doButtonAction:" destination="-1" eventType="touchUpInside" id="M4y-KZ-H8Q"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.82541232639999995" green="0.097191722300000005" blue="0.097148026439999993" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XY9-Zk-lXg" secondAttribute="bottom" id="25T-Pf-CjU"/>
+                <constraint firstItem="XY9-Zk-lXg" firstAttribute="top" secondItem="5OU-V4-Zga" secondAttribute="top" id="3aK-Hs-wrV"/>
+                <constraint firstItem="XY9-Zk-lXg" firstAttribute="leading" secondItem="5OU-V4-Zga" secondAttribute="trailing" constant="8" id="5VO-L7-wxj"/>
+                <constraint firstAttribute="trailing" secondItem="XY9-Zk-lXg" secondAttribute="trailing" id="9Wh-2W-0iK"/>
+                <constraint firstItem="XY9-Zk-lXg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JcB-Oa-iJ1"/>
+                <constraint firstItem="5OU-V4-Zga" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aFd-th-IFb"/>
+                <constraint firstAttribute="bottom" secondItem="5OU-V4-Zga" secondAttribute="bottom" id="q4E-AY-XBl"/>
+                <constraint firstItem="XY9-Zk-lXg" firstAttribute="bottom" secondItem="5OU-V4-Zga" secondAttribute="bottom" id="w3a-An-V1Z"/>
+                <constraint firstItem="5OU-V4-Zga" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wqF-pO-0ze"/>
+                <constraint firstItem="XY9-Zk-lXg" firstAttribute="leading" secondItem="5OU-V4-Zga" secondAttribute="trailing" constant="8" symbolic="YES" id="yZs-00-QEd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="3aK-Hs-wrV"/>
+                    <exclude reference="w3a-An-V1Z"/>
+                    <exclude reference="yZs-00-QEd"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
