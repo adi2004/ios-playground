@@ -1,0 +1,34 @@
+https://www.captechconsulting.com/blogs/ios-design-patterns-mvc-and-mvvm
+
+1) Data Model
+    MVVM data model is a class that declares properties for managing business data.
+    These data objects are declared in the model as class properties with appropriate getters and setters.
+
+2) ViewModel
+    contains business logic and work flow
+    provides the connection between the business logic and the view/view controller
+
+3) View/View Controller
+    is primarily responding to the viewModel to configure and present UI elements
+    This decoupling results in thin, flexible, and easy-to-read view controller classes in iOS.
+
+
+https://cocoacasts.com/what-are-the-benefits-of-model-view-viewmodel/
+
+Rule 1
+The view does not know about the controller it is owned by. Remember that views are supposed to be dumb. They only know how to present the data they are given to the user.
+
+Rule 2
+The controller does not know about the model. This is what separates MVC from MVVM.
+
+Rule 3
+The model does not know about the view model it is owned by.
+
+Rule 4
+The view model owns the model. When using the Model-View-Controller pattern, the model is usually owned by the controller.
+
+Rule 5
+The view controller owns the view. This relationship remains unchanged when using the Model-View-ViewModel pattern.
+
+Rule 6
+And, finally, the controller owns the view model. It interacts with the model layer through one or more view models.

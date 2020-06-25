@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KPM-aY-wRu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="cv3-sa-5zy">
+            <objects>
+                <viewController storyboardIdentifier="CTViewController" id="cvQ-Jd-5xZ" customClass="CTViewController" customModule="MVVMCapTechSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Zm-iL-frZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="zW4-aV-sEt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KmR-cy-iUr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Robot" translatesAutoresizingMaskIntoConstraints="NO" id="ACI-0n-Iag">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tbw-lS-6u8">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cvQ-Jd-5xZ" id="qOZ-qm-zaA"/>
+                                    <outlet property="delegate" destination="cvQ-Jd-5xZ" id="m7n-XA-YGF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zW4-aV-sEt" firstAttribute="top" secondItem="tbw-lS-6u8" secondAttribute="bottom" id="8zP-3x-8Cm"/>
+                            <constraint firstAttribute="trailing" secondItem="tbw-lS-6u8" secondAttribute="trailing" id="Kuf-6C-BAe"/>
+                            <constraint firstItem="tbw-lS-6u8" firstAttribute="top" secondItem="4Zm-iL-frZ" secondAttribute="bottom" id="NFf-Z5-Z48"/>
+                            <constraint firstAttribute="trailing" secondItem="ACI-0n-Iag" secondAttribute="trailing" id="XJ0-uD-pPz"/>
+                            <constraint firstItem="zW4-aV-sEt" firstAttribute="top" secondItem="ACI-0n-Iag" secondAttribute="bottom" id="g65-n2-G50"/>
+                            <constraint firstItem="ACI-0n-Iag" firstAttribute="leading" secondItem="KmR-cy-iUr" secondAttribute="leading" id="gub-a0-zCh"/>
+                            <constraint firstItem="ACI-0n-Iag" firstAttribute="top" secondItem="4Zm-iL-frZ" secondAttribute="bottom" id="uon-iw-jj8"/>
+                            <constraint firstItem="tbw-lS-6u8" firstAttribute="leading" secondItem="KmR-cy-iUr" secondAttribute="leading" id="v4k-Ff-2Kn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3fu-Xj-eBD"/>
+                    <connections>
+                        <outlet property="imageView" destination="ACI-0n-Iag" id="xuF-SJ-DVd"/>
+                        <outlet property="tableView" destination="tbw-lS-6u8" id="Z5z-0J-EaK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0mT-NG-4bG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1302" y="1011"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uOh-zj-wbp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KPM-aY-wRu" customClass="NavigationController" customModule="MVVMCapTechSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5T0-19-vUY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cvQ-Jd-5xZ" kind="relationship" relationship="rootViewController" id="8p1-Ad-4hd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uu-2X-74l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="524" y="1011"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Robot" width="450" height="534.75"/>
+    </resources>
+</document>
