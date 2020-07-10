@@ -14,7 +14,8 @@
 		7993E47524B76B8900128991 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7993E47424B76B8900128991 /* Preview Assets.xcassets */; };
 		7993E47824B76B8900128991 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7993E47624B76B8900128991 /* LaunchScreen.storyboard */; };
 		7993E48124B76CBB00128991 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 7993E48024B76CBB00128991 /* Moya */; };
-		7993E48324B76D1800128991 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7993E48224B76D1800128991 /* Service.swift */; };
+		7993E48324B76D1800128991 /* PostmanEchoTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7993E48224B76D1800128991 /* PostmanEchoTargetType.swift */; };
+		7993E48524B8C42E00128991 /* HTTPBinTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7993E48424B8C42D00128991 /* HTTPBinTargetType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +27,8 @@
 		7993E47424B76B8900128991 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7993E47724B76B8900128991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7993E47924B76B8900128991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7993E48224B76D1800128991 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		7993E48224B76D1800128991 /* PostmanEchoTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanEchoTargetType.swift; sourceTree = "<group>"; };
+		7993E48424B8C42D00128991 /* HTTPBinTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPBinTargetType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +69,8 @@
 				7993E47624B76B8900128991 /* LaunchScreen.storyboard */,
 				7993E47924B76B8900128991 /* Info.plist */,
 				7993E47324B76B8900128991 /* Preview Content */,
-				7993E48224B76D1800128991 /* Service.swift */,
+				7993E48224B76D1800128991 /* PostmanEchoTargetType.swift */,
+				7993E48424B8C42D00128991 /* HTTPBinTargetType.swift */,
 			);
 			path = SwiftPackageManager;
 			sourceTree = "<group>";
@@ -158,9 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7993E46C24B76B8600128991 /* AppDelegate.swift in Sources */,
-				7993E48324B76D1800128991 /* Service.swift in Sources */,
+				7993E48324B76D1800128991 /* PostmanEchoTargetType.swift in Sources */,
 				7993E46E24B76B8600128991 /* SceneDelegate.swift in Sources */,
 				7993E47024B76B8600128991 /* ContentView.swift in Sources */,
+				7993E48524B8C42E00128991 /* HTTPBinTargetType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -282,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

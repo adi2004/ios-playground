@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         print("doing something")
         request()
+        requestHTTPBin()
         return true
     }
 
@@ -35,10 +36,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
     func request() -> String {
-        let provider = MoyaProvider<MyService>()
+        let provider = MoyaProvider<PostmanEchoTargetType>()
         provider.request(.getWithParams(paramA: "James", paramB: "Potter")) { result in
-            // do something with the result (read on for more details)
-            print("result getWithParams: \(result)")
+            print("PostmanEchoTargetType result: \(result)")
+            switch result {
+            case .success(let response):
+                print("PostmanEchoTargetType response: \(String(data: response.data, encoding: String.Encoding.utf8) ?? "")")
+            case .failure(let error):
+                print("PostmanEchoTargetType error: \(error)")
+            }
         }
 
         // The full request will result to the following:
@@ -59,6 +65,20 @@ extension AppDelegate {
         // POST https://api.myservice.com/users/123?first_name=Harry&last_name=Potter
         
         return "world"
+    }
+    
+    func requestHTTPBin() {
+        let provider = MoyaProvider<HTTPBinTargetType>()
+        provider.request(HTTPBinTargetType()) { result in
+            print("HTTPBinTargetType result: \(result)")
+
+            switch result {
+            case .success(let response):
+                print("HTTPBinTargetType response: \(String(data: response.data, encoding: String.Encoding.utf8) ?? "")")
+            case .failure(let error):
+                print("HTTPBinTargetType error: \(error)")
+            }
+        }
     }
 }
 

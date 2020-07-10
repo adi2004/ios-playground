@@ -11,7 +11,7 @@ import Foundation
 
 //https://github.com/Moya/Moya.git
 
-enum MyService {
+enum PostmanEchoTargetType {
     case get
     case getWithParams(paramA: String, paramB: String)
     case showUser(id: Int)
@@ -20,7 +20,7 @@ enum MyService {
 }
 
 // MARK: - TargetType Protocol Implementation
-extension MyService: TargetType {
+extension PostmanEchoTargetType: TargetType {
     var baseURL: URL { return URL(string: "https://postman-echo.com")! }
     var path: String {
         switch self {
@@ -36,9 +36,9 @@ extension MyService: TargetType {
     }
     var method: Moya.Method {
         switch self {
-        case .get, .showUser, .showAccounts:
+        case .get, .showUser, .showAccounts, .getWithParams:
             return .get
-        case .getWithParams, .updateUser:
+        case .updateUser:
             return .post
         }
     }
