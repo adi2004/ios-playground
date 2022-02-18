@@ -29,4 +29,6 @@ for _ in 0...100 {
 
 print(output)
 
+//part4()
+print(isAbc("abc"))
 //: [Next](@next)

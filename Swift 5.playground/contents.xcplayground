@@ -8,5 +8,19 @@
         <page name='Guess'/>
         <page name='Protocol'/>
         <page name='Array'/>
+        <page name='CharacterSet'/>
+        <page name='if case'/>
+        <page name='Proto'/>
+        <page name='Swizzle'/>
+        <page name='Substitution chall'/>
+        <page name='URL'/>
+        <page name='SHA256'/>
+        <page name='Reducer'/>
+        <page name='Unique'/>
+        <page name='Triangles'/>
+        <page name='Date'/>
+        <page name='Combine'/>
+        <page name='Context'/>
+        <page name='ChallWalle'/>
     </pages>
 </playground>
