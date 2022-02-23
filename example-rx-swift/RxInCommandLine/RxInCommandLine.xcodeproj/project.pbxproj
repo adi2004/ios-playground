@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		791DF57827C63C5200CEAA65 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DF57727C63C5200CEAA65 /* main.swift */; };
+		791DF58B27C6421100CEAA65 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791DF58A27C6421100CEAA65 /* RxSwift.xcframework */; };
+		791DF58C27C6421100CEAA65 /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 791DF58A27C6421100CEAA65 /* RxSwift.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		791DF58E27C6429100CEAA65 /* SupportCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DF58D27C6429100CEAA65 /* SupportCode.swift */; };
+		791DF59027C642D800CEAA65 /* rw_observable_of.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DF58F27C642D800CEAA65 /* rw_observable_of.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,11 +24,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		791DF58927C6418B00CEAA65 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				791DF58C27C6421100CEAA65 /* RxSwift.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		791DF57427C63C5200CEAA65 /* RxInCommandLine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RxInCommandLine; sourceTree = BUILT_PRODUCTS_DIR; };
 		791DF57727C63C5200CEAA65 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		791DF58A27C6421100CEAA65 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = binaries/RxSwift.xcframework; sourceTree = "<group>"; };
+		791DF58D27C6429100CEAA65 /* SupportCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportCode.swift; sourceTree = "<group>"; };
+		791DF58F27C642D800CEAA65 /* rw_observable_of.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rw_observable_of.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791DF58B27C6421100CEAA65 /* RxSwift.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +62,7 @@
 			children = (
 				791DF57627C63C5200CEAA65 /* RxInCommandLine */,
 				791DF57527C63C5200CEAA65 /* Products */,
+				791DF57E27C63E4C00CEAA65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +78,18 @@
 			isa = PBXGroup;
 			children = (
 				791DF57727C63C5200CEAA65 /* main.swift */,
+				791DF58D27C6429100CEAA65 /* SupportCode.swift */,
+				791DF58F27C642D800CEAA65 /* rw_observable_of.swift */,
 			);
 			path = RxInCommandLine;
+			sourceTree = "<group>";
+		};
+		791DF57E27C63E4C00CEAA65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				791DF58A27C6421100CEAA65 /* RxSwift.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +102,7 @@
 				791DF57027C63C5200CEAA65 /* Sources */,
 				791DF57127C63C5200CEAA65 /* Frameworks */,
 				791DF57227C63C5200CEAA65 /* CopyFiles */,
+				791DF58927C6418B00CEAA65 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791DF58E27C6429100CEAA65 /* SupportCode.swift in Sources */,
+				791DF59027C642D800CEAA65 /* rw_observable_of.swift in Sources */,
 				791DF57827C63C5200CEAA65 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +279,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -255,6 +292,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
