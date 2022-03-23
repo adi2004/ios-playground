@@ -14,9 +14,17 @@ func rw_single() {
         
         observable
             .subscribe(onNext: { event in
-                print("Single.asObservable.onNext: event = \(event)")
+                print("1Single.asObservable.onNext: event = \(event)")
             }, onCompleted: {
-                print("Single.asObservable.onCompleted")
+                print("1Single.asObservable.onCompleted")
+            })
+            .disposed(by: db)
+        
+        observable
+            .subscribe(onNext: { event in
+                print("2Single.asObservable.onNext: event = \(event)")
+            }, onCompleted: {
+                print("2Single.asObservable.onCompleted")
             })
             .disposed(by: db)
     }
