@@ -14,7 +14,8 @@
 		791DF59427C643A200CEAA65 /* rw_subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DF59327C643A200CEAA65 /* rw_subject.swift */; };
 		791DF59627C643DA00CEAA65 /* rw_never.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DF59527C643DA00CEAA65 /* rw_never.swift */; };
 		791DF5B327C6497300CEAA65 /* ich.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DF5B227C6497300CEAA65 /* ich.swift */; };
-		79BC321427CCE04600E7F26A /* RxSwift-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 79BC321327CCE04600E7F26A /* RxSwift-Dynamic */; };
+		79BC321927CCE44900E7F26A /* RxSwift-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 79BC321827CCE44900E7F26A /* RxSwift-Dynamic */; };
+		79BC322227CD3EC200E7F26A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BC322127CD3EC200E7F26A /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,15 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79BC321D27CD3EC100E7F26A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +59,8 @@
 		791DF59527C643DA00CEAA65 /* rw_never.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rw_never.swift; sourceTree = "<group>"; };
 		791DF59727C6441D00CEAA65 /* rw_filtering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rw_filtering.swift; sourceTree = "<group>"; };
 		791DF5B227C6497300CEAA65 /* ich.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ich.swift; sourceTree = "<group>"; };
+		79BC321F27CD3EC100E7F26A /* CombinePlayground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CombinePlayground; sourceTree = BUILT_PRODUCTS_DIR; };
+		79BC322127CD3EC200E7F26A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +68,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79BC321427CCE04600E7F26A /* RxSwift-Dynamic in Frameworks */,
+				79BC321927CCE44900E7F26A /* RxSwift-Dynamic in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79BC321C27CD3EC100E7F26A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				791DF57627C63C5200CEAA65 /* RxCommandLine */,
+				79BC322027CD3EC200E7F26A /* Combine */,
 				791DF57527C63C5200CEAA65 /* Products */,
 				791DF57E27C63E4C00CEAA65 /* Frameworks */,
 			);
@@ -76,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				791DF57427C63C5200CEAA65 /* RxCommandLine */,
+				79BC321F27CD3EC100E7F26A /* CombinePlayground */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +123,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		79BC322027CD3EC200E7F26A /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				79BC322127CD3EC200E7F26A /* main.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,10 +149,27 @@
 			);
 			name = RxCommandLine;
 			packageProductDependencies = (
-				79BC321327CCE04600E7F26A /* RxSwift-Dynamic */,
+				79BC321827CCE44900E7F26A /* RxSwift-Dynamic */,
 			);
 			productName = RxInCommandLine;
 			productReference = 791DF57427C63C5200CEAA65 /* RxCommandLine */;
+			productType = "com.apple.product-type.tool";
+		};
+		79BC321E27CD3EC100E7F26A /* CombinePlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79BC322327CD3EC200E7F26A /* Build configuration list for PBXNativeTarget "CombinePlayground" */;
+			buildPhases = (
+				79BC321B27CD3EC100E7F26A /* Sources */,
+				79BC321C27CD3EC100E7F26A /* Frameworks */,
+				79BC321D27CD3EC100E7F26A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CombinePlayground;
+			productName = Combine;
+			productReference = 79BC321F27CD3EC100E7F26A /* CombinePlayground */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -139,6 +185,9 @@
 					791DF57327C63C5200CEAA65 = {
 						CreatedOnToolsVersion = 13.0;
 					};
+					79BC321E27CD3EC100E7F26A = {
+						CreatedOnToolsVersion = 13.0;
+					};
 				};
 			};
 			buildConfigurationList = 791DF56F27C63C5200CEAA65 /* Build configuration list for PBXProject "RxCommandLine" */;
@@ -151,13 +200,14 @@
 			);
 			mainGroup = 791DF56B27C63C5200CEAA65;
 			packageReferences = (
-				79BC321227CCE04600E7F26A /* XCRemoteSwiftPackageReference "RxSwift" */,
+				79BC321527CCE3EC00E7F26A /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 791DF57527C63C5200CEAA65 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				791DF57327C63C5200CEAA65 /* RxCommandLine */,
+				79BC321E27CD3EC100E7F26A /* CombinePlayground */,
 			);
 		};
 /* End PBXProject section */
@@ -174,6 +224,14 @@
 				791DF5B327C6497300CEAA65 /* ich.swift in Sources */,
 				791DF59027C642D800CEAA65 /* rw_observable_of.swift in Sources */,
 				791DF57827C63C5200CEAA65 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79BC321B27CD3EC100E7F26A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79BC322227CD3EC200E7F26A /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +379,24 @@
 			};
 			name = Release;
 		};
+		79BC322427CD3EC200E7F26A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		79BC322527CD3EC200E7F26A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -342,10 +418,19 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		79BC322327CD3EC200E7F26A /* Build configuration list for PBXNativeTarget "CombinePlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79BC322427CD3EC200E7F26A /* Debug */,
+				79BC322527CD3EC200E7F26A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		79BC321227CCE04600E7F26A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		79BC321527CCE3EC00E7F26A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
 			requirement = {
@@ -356,9 +441,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		79BC321327CCE04600E7F26A /* RxSwift-Dynamic */ = {
+		79BC321827CCE44900E7F26A /* RxSwift-Dynamic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 79BC321227CCE04600E7F26A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = 79BC321527CCE3EC00E7F26A /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = "RxSwift-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
