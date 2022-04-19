@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		790C269B27ECCA060070ADF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C269A27ECCA060070ADF7 /* AppDelegate.swift */; };
+		790C269D27ECCA060070ADF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C269C27ECCA060070ADF7 /* ViewController.swift */; };
+		790C26A027ECCA060070ADF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790C269E27ECCA060070ADF7 /* Main.storyboard */; };
+		790C26A227ECCA0B0070ADF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 790C26A127ECCA0B0070ADF7 /* Assets.xcassets */; };
+		790C26A527ECCA0B0070ADF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790C26A327ECCA0B0070ADF7 /* LaunchScreen.storyboard */; };
+		790C26AF27ECCA0C0070ADF7 /* CarouselTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C26AE27ECCA0C0070ADF7 /* CarouselTVTests.swift */; };
+		790C26B927ECCA0C0070ADF7 /* CarouselTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C26B827ECCA0C0070ADF7 /* CarouselTVUITests.swift */; };
+		790C26BB27ECCA0C0070ADF7 /* CarouselTVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C26BA27ECCA0C0070ADF7 /* CarouselTVUITestsLaunchTests.swift */; };
+		790C26C827ECCAFF0070ADF7 /* StandardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C26C727ECCAFF0070ADF7 /* StandardCell.swift */; };
+		79BF139627FC417D0090464E /* PosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BF139527FC417C0090464E /* PosterCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		790C26AB27ECCA0C0070ADF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 790C268F27ECCA060070ADF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 790C269627ECCA060070ADF7;
+			remoteInfo = CarouselTV;
+		};
+		790C26B527ECCA0C0070ADF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 790C268F27ECCA060070ADF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 790C269627ECCA060070ADF7;
+			remoteInfo = CarouselTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		790C269727ECCA060070ADF7 /* CarouselTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarouselTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		790C269A27ECCA060070ADF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		790C269C27ECCA060070ADF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		790C269F27ECCA060070ADF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		790C26A127ECCA0B0070ADF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		790C26A427ECCA0B0070ADF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		790C26AA27ECCA0C0070ADF7 /* CarouselTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarouselTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		790C26AE27ECCA0C0070ADF7 /* CarouselTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTVTests.swift; sourceTree = "<group>"; };
+		790C26B427ECCA0C0070ADF7 /* CarouselTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarouselTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		790C26B827ECCA0C0070ADF7 /* CarouselTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTVUITests.swift; sourceTree = "<group>"; };
+		790C26BA27ECCA0C0070ADF7 /* CarouselTVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTVUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		790C26C727ECCAFF0070ADF7 /* StandardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardCell.swift; sourceTree = "<group>"; };
+		79BF139527FC417C0090464E /* PosterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		790C269427ECCA060070ADF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790C26A727ECCA0C0070ADF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790C26B127ECCA0C0070ADF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		790C268E27ECCA060070ADF7 = {
+			isa = PBXGroup;
+			children = (
+				790C269927ECCA060070ADF7 /* CarouselTV */,
+				790C26AD27ECCA0C0070ADF7 /* CarouselTVTests */,
+				790C26B727ECCA0C0070ADF7 /* CarouselTVUITests */,
+				790C269827ECCA060070ADF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		790C269827ECCA060070ADF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				790C269727ECCA060070ADF7 /* CarouselTV.app */,
+				790C26AA27ECCA0C0070ADF7 /* CarouselTVTests.xctest */,
+				790C26B427ECCA0C0070ADF7 /* CarouselTVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		790C269927ECCA060070ADF7 /* CarouselTV */ = {
+			isa = PBXGroup;
+			children = (
+				790C269A27ECCA060070ADF7 /* AppDelegate.swift */,
+				790C269C27ECCA060070ADF7 /* ViewController.swift */,
+				790C269E27ECCA060070ADF7 /* Main.storyboard */,
+				790C26C727ECCAFF0070ADF7 /* StandardCell.swift */,
+				790C26A127ECCA0B0070ADF7 /* Assets.xcassets */,
+				790C26A327ECCA0B0070ADF7 /* LaunchScreen.storyboard */,
+				79BF139527FC417C0090464E /* PosterCell.swift */,
+			);
+			path = CarouselTV;
+			sourceTree = "<group>";
+		};
+		790C26AD27ECCA0C0070ADF7 /* CarouselTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				790C26AE27ECCA0C0070ADF7 /* CarouselTVTests.swift */,
+			);
+			path = CarouselTVTests;
+			sourceTree = "<group>";
+		};
+		790C26B727ECCA0C0070ADF7 /* CarouselTVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				790C26B827ECCA0C0070ADF7 /* CarouselTVUITests.swift */,
+				790C26BA27ECCA0C0070ADF7 /* CarouselTVUITestsLaunchTests.swift */,
+			);
+			path = CarouselTVUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		790C269627ECCA060070ADF7 /* CarouselTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 790C26BE27ECCA0C0070ADF7 /* Build configuration list for PBXNativeTarget "CarouselTV" */;
+			buildPhases = (
+				790C269327ECCA060070ADF7 /* Sources */,
+				790C269427ECCA060070ADF7 /* Frameworks */,
+				790C269527ECCA060070ADF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarouselTV;
+			productName = CarouselTV;
+			productReference = 790C269727ECCA060070ADF7 /* CarouselTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		790C26A927ECCA0C0070ADF7 /* CarouselTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 790C26C127ECCA0C0070ADF7 /* Build configuration list for PBXNativeTarget "CarouselTVTests" */;
+			buildPhases = (
+				790C26A627ECCA0C0070ADF7 /* Sources */,
+				790C26A727ECCA0C0070ADF7 /* Frameworks */,
+				790C26A827ECCA0C0070ADF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				790C26AC27ECCA0C0070ADF7 /* PBXTargetDependency */,
+			);
+			name = CarouselTVTests;
+			productName = CarouselTVTests;
+			productReference = 790C26AA27ECCA0C0070ADF7 /* CarouselTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		790C26B327ECCA0C0070ADF7 /* CarouselTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 790C26C427ECCA0C0070ADF7 /* Build configuration list for PBXNativeTarget "CarouselTVUITests" */;
+			buildPhases = (
+				790C26B027ECCA0C0070ADF7 /* Sources */,
+				790C26B127ECCA0C0070ADF7 /* Frameworks */,
+				790C26B227ECCA0C0070ADF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				790C26B627ECCA0C0070ADF7 /* PBXTargetDependency */,
+			);
+			name = CarouselTVUITests;
+			productName = CarouselTVUITests;
+			productReference = 790C26B427ECCA0C0070ADF7 /* CarouselTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		790C268F27ECCA060070ADF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					790C269627ECCA060070ADF7 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					790C26A927ECCA0C0070ADF7 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 790C269627ECCA060070ADF7;
+					};
+					790C26B327ECCA0C0070ADF7 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 790C269627ECCA060070ADF7;
+					};
+				};
+			};
+			buildConfigurationList = 790C269227ECCA060070ADF7 /* Build configuration list for PBXProject "CarouselTV" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 790C268E27ECCA060070ADF7;
+			productRefGroup = 790C269827ECCA060070ADF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				790C269627ECCA060070ADF7 /* CarouselTV */,
+				790C26A927ECCA0C0070ADF7 /* CarouselTVTests */,
+				790C26B327ECCA0C0070ADF7 /* CarouselTVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		790C269527ECCA060070ADF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790C26A527ECCA0B0070ADF7 /* LaunchScreen.storyboard in Resources */,
+				790C26A227ECCA0B0070ADF7 /* Assets.xcassets in Resources */,
+				790C26A027ECCA060070ADF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790C26A827ECCA0C0070ADF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790C26B227ECCA0C0070ADF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		790C269327ECCA060070ADF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79BF139627FC417D0090464E /* PosterCell.swift in Sources */,
+				790C269D27ECCA060070ADF7 /* ViewController.swift in Sources */,
+				790C269B27ECCA060070ADF7 /* AppDelegate.swift in Sources */,
+				790C26C827ECCAFF0070ADF7 /* StandardCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790C26A627ECCA0C0070ADF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790C26AF27ECCA0C0070ADF7 /* CarouselTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790C26B027ECCA0C0070ADF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790C26BB27ECCA0C0070ADF7 /* CarouselTVUITestsLaunchTests.swift in Sources */,
+				790C26B927ECCA0C0070ADF7 /* CarouselTVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		790C26AC27ECCA0C0070ADF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 790C269627ECCA060070ADF7 /* CarouselTV */;
+			targetProxy = 790C26AB27ECCA0C0070ADF7 /* PBXContainerItemProxy */;
+		};
+		790C26B627ECCA0C0070ADF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 790C269627ECCA060070ADF7 /* CarouselTV */;
+			targetProxy = 790C26B527ECCA0C0070ADF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		790C269E27ECCA060070ADF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				790C269F27ECCA060070ADF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		790C26A327ECCA0B0070ADF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				790C26A427ECCA0B0070ADF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		790C26BC27ECCA0C0070ADF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Debug;
+		};
+		790C26BD27ECCA0C0070ADF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		790C26BF27ECCA0C0070ADF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.infloresc.CarouselTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+			};
+			name = Debug;
+		};
+		790C26C027ECCA0C0070ADF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.infloresc.CarouselTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+			};
+			name = Release;
+		};
+		790C26C227ECCA0C0070ADF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.infloresc.CarouselTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarouselTV.app/CarouselTV";
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Debug;
+		};
+		790C26C327ECCA0C0070ADF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.infloresc.CarouselTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarouselTV.app/CarouselTV";
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Release;
+		};
+		790C26C527ECCA0C0070ADF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.infloresc.CarouselTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = CarouselTV;
+			};
+			name = Debug;
+		};
+		790C26C627ECCA0C0070ADF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.infloresc.CarouselTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = CarouselTV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		790C269227ECCA060070ADF7 /* Build configuration list for PBXProject "CarouselTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				790C26BC27ECCA0C0070ADF7 /* Debug */,
+				790C26BD27ECCA0C0070ADF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		790C26BE27ECCA0C0070ADF7 /* Build configuration list for PBXNativeTarget "CarouselTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				790C26BF27ECCA0C0070ADF7 /* Debug */,
+				790C26C027ECCA0C0070ADF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		790C26C127ECCA0C0070ADF7 /* Build configuration list for PBXNativeTarget "CarouselTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				790C26C227ECCA0C0070ADF7 /* Debug */,
+				790C26C327ECCA0C0070ADF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		790C26C427ECCA0C0070ADF7 /* Build configuration list for PBXNativeTarget "CarouselTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				790C26C527ECCA0C0070ADF7 /* Debug */,
+				790C26C627ECCA0C0070ADF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 790C268F27ECCA060070ADF7 /* Project object */;
+}
