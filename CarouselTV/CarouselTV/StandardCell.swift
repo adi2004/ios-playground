@@ -10,7 +10,7 @@ import UIKit
 class StandardCell: UICollectionViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var collection: UICollectionView!
-    var opacity: Float = 1.0
+//    var opacity: Float = 1.0
     
     override func awakeFromNib() {
         super.awakeFromNib()

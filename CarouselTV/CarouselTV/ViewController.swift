@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var topConstraint: NSLayoutConstraint!
     @IBOutlet weak var selectedViewLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
@@ -15,7 +16,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.contentInset = .init(top: 500, left: 0, bottom: 0, right: 0)
+//        collectionView.contentInset = .init(top: 500, left: 0, bottom: 0, right: 0)
 //        collectionView.dele
         collectionView.isScrollEnabled = false
         
@@ -46,7 +47,7 @@ extension ViewController: UICollectionViewDataSource {
         
         cell.name.text = "\(indexPath.row)"
         cell.layer.borderWidth = 2
-        cell.layer.opacity = cell.opacity
+//        cell.layer.opacity = cell.opacity
         cell.layer.debug("StandardCVC \(indexPath)", .yellow)
         return cell
     }
@@ -63,15 +64,20 @@ extension ViewController: UICollectionViewDataSource {
         if let next = context.nextFocusedIndexPath {
             let cell = collectionView.cellForItem(at: next)
             coordinator.addCoordinatedAnimations {
-                cell?.layer.opacity = 1
+//                cell?.layer.opacity = 1
                 self.collectionView.scrollToItem(at: next, at: .bottom, animated: false)
+                if next.row != 1 {
+                    self.topConstraint.constant = 500
+                } else {
+                    self.topConstraint.constant = 0
+                }
             } completion: {}
             
         }
         if let previous = context.previouslyFocusedIndexPath {
             let cell = collectionView.cellForItem(at: previous)
             coordinator.addCoordinatedAnimations {
-                cell?.layer.opacity = 0.01
+//                cell?.layer.opacity = 0.01
             } completion: {}
         }
 //        guard let previous = context.previouslyFocusedIndexPath, let next = context.nextFocusedIndexPath else {
