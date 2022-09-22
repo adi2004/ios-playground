@@ -8,6 +8,8 @@ Scope:
     - code
     - using combine
     - using vm / make vm reusable
+- add localization
+- add logs
 
 - add tests
 
