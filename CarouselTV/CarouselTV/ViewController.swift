@@ -65,7 +65,7 @@ extension ViewController: UICollectionViewDataSource {
             let cell = collectionView.cellForItem(at: next)
             coordinator.addCoordinatedAnimations {
 //                cell?.layer.opacity = 1
-                self.collectionView.scrollToItem(at: next, at: .bottom, animated: false)
+                self.collectionView.scrollToItem(at: next, at: .top, animated: false)
                 if next.row != 1 {
                     self.topConstraint.constant = 500
                 } else {
