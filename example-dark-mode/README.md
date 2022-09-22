@@ -10,6 +10,7 @@ Scope:
     - using vm / make vm reusable
 - add localization
 - add logs
+- add force update
 
 - add tests
 

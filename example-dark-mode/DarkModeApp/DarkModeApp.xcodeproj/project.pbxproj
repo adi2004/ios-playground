@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7920647828DCB98000416734 /* UITableViewCell+applyStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7920647728DCB98000416734 /* UITableViewCell+applyStyles.swift */; };
 		79B7A16728DC8C88005695E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B7A16628DC8C88005695E7 /* Main.storyboard */; };
 		79B7A16928DC8DDF005695E7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 79B7A16828DC8DDE005695E7 /* README.md */; };
 		79B7A16A28DC90DA005695E7 /* DarkModeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FE3A0528DC866E006A76E0 /* DarkModeAppApp.swift */; };
@@ -16,6 +17,9 @@
 		79B7A17828DC98AF005695E7 /* ExpediteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B7A17728DC98AF005695E7 /* ExpediteViewController.swift */; };
 		79B7A17A28DC993E005695E7 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B7A17928DC993E005695E7 /* SettingsTableViewController.swift */; };
 		79B7A17D28DCA0FC005695E7 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B7A17C28DCA0FC005695E7 /* Colors.xcassets */; };
+		79B7A17F28DCA744005695E7 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B7A17E28DCA744005695E7 /* SettingsViewModel.swift */; };
+		79B7A18928DCADCE005695E7 /* DMWithXIBTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B7A18728DCADCE005695E7 /* DMWithXIBTableViewController.swift */; };
+		79B7A18A28DCADCE005695E7 /* DMWithXIBTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B7A18828DCADCE005695E7 /* DMWithXIBTableViewController.xib */; };
 		79FE3A0A28DC8672006A76E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79FE3A0928DC8672006A76E0 /* Assets.xcassets */; };
 		79FE3A0D28DC8672006A76E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79FE3A0C28DC8672006A76E0 /* Preview Assets.xcassets */; };
 		79FE3A1728DC8672006A76E0 /* DarkModeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FE3A1628DC8672006A76E0 /* DarkModeAppTests.swift */; };
@@ -41,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7920647728DCB98000416734 /* UITableViewCell+applyStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+applyStyles.swift"; sourceTree = "<group>"; };
 		79B7A16628DC8C88005695E7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		79B7A16828DC8DDE005695E7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		79B7A16C28DC911F005695E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +53,9 @@
 		79B7A17728DC98AF005695E7 /* ExpediteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpediteViewController.swift; sourceTree = "<group>"; };
 		79B7A17928DC993E005695E7 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		79B7A17C28DCA0FC005695E7 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		79B7A17E28DCA744005695E7 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		79B7A18728DCADCE005695E7 /* DMWithXIBTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMWithXIBTableViewController.swift; sourceTree = "<group>"; };
+		79B7A18828DCADCE005695E7 /* DMWithXIBTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DMWithXIBTableViewController.xib; sourceTree = "<group>"; };
 		79FE3A0228DC866E006A76E0 /* DarkModeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkModeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79FE3A0528DC866E006A76E0 /* DarkModeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeAppApp.swift; sourceTree = "<group>"; };
 		79FE3A0728DC866E006A76E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7920647628DCB95C00416734 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7920647728DCB98000416734 /* UITableViewCell+applyStyles.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		79B7A16528DC8C39005695E7 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,17 +148,20 @@
 		79B7A17428DC970F005695E7 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				79B7A17B28DC9A22005695E7 /* DarkMode */,
+				79B7A18628DCADA9005695E7 /* DMWithXIB */,
 				79B7A17928DC993E005695E7 /* SettingsTableViewController.swift */,
+				79B7A17E28DCA744005695E7 /* SettingsViewModel.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		79B7A17B28DC9A22005695E7 /* DarkMode */ = {
+		79B7A18628DCADA9005695E7 /* DMWithXIB */ = {
 			isa = PBXGroup;
 			children = (
+				79B7A18728DCADCE005695E7 /* DMWithXIBTableViewController.swift */,
+				79B7A18828DCADCE005695E7 /* DMWithXIBTableViewController.xib */,
 			);
-			path = DarkMode;
+			path = DMWithXIB;
 			sourceTree = "<group>";
 		};
 		79FE39F928DC866E006A76E0 = {
@@ -169,6 +188,7 @@
 		79FE3A0428DC866E006A76E0 /* DarkModeApp */ = {
 			isa = PBXGroup;
 			children = (
+				7920647628DCB95C00416734 /* Helpers */,
 				79B7A17228DC9703005695E7 /* Drive */,
 				79B7A17328DC9709005695E7 /* Expedite */,
 				79B7A16E28DC9127005695E7 /* Main */,
@@ -310,6 +330,7 @@
 			files = (
 				79B7A17D28DCA0FC005695E7 /* Colors.xcassets in Resources */,
 				79FE3A0D28DC8672006A76E0 /* Preview Assets.xcassets in Resources */,
+				79B7A18A28DCADCE005695E7 /* DMWithXIBTableViewController.xib in Resources */,
 				79B7A16728DC8C88005695E7 /* Main.storyboard in Resources */,
 				79B7A16928DC8DDF005695E7 /* README.md in Resources */,
 				79FE3A0A28DC8672006A76E0 /* Assets.xcassets in Resources */,
@@ -341,8 +362,11 @@
 				79B7A17628DC9733005695E7 /* DriveViewController.swift in Sources */,
 				79B7A17A28DC993E005695E7 /* SettingsTableViewController.swift in Sources */,
 				79B7A16B28DC90DD005695E7 /* ContentView.swift in Sources */,
+				79B7A18928DCADCE005695E7 /* DMWithXIBTableViewController.swift in Sources */,
 				79B7A16A28DC90DA005695E7 /* DarkModeAppApp.swift in Sources */,
 				79B7A17828DC98AF005695E7 /* ExpediteViewController.swift in Sources */,
+				79B7A17F28DCA744005695E7 /* SettingsViewModel.swift in Sources */,
+				7920647828DCB98000416734 /* UITableViewCell+applyStyles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
