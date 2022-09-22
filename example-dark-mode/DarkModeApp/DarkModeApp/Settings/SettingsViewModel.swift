@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 struct SettingsViewModel {
     let model = [
@@ -28,6 +29,11 @@ struct SettingsViewModel {
     }
 
     func viewController(at indexPath: IndexPath) -> UIViewController {
+        if indexPath.row == 0 {
+            let view = DMWithSwiftUIView()
+            let hostVC = UIHostingController(rootView: view)
+            return hostVC
+        }
         let vc = DMWithXIBTableViewController()
         vc.title = model[indexPath.row].text
         return vc

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7920647828DCB98000416734 /* UITableViewCell+applyStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7920647728DCB98000416734 /* UITableViewCell+applyStyles.swift */; };
+		7920647D28DCC3C800416734 /* DMWithSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7920647C28DCC3C800416734 /* DMWithSwiftUIView.swift */; };
 		79B7A16728DC8C88005695E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B7A16628DC8C88005695E7 /* Main.storyboard */; };
 		79B7A16928DC8DDF005695E7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 79B7A16828DC8DDE005695E7 /* README.md */; };
 		79B7A16A28DC90DA005695E7 /* DarkModeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FE3A0528DC866E006A76E0 /* DarkModeAppApp.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		7920647728DCB98000416734 /* UITableViewCell+applyStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+applyStyles.swift"; sourceTree = "<group>"; };
+		7920647C28DCC3C800416734 /* DMWithSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMWithSwiftUIView.swift; sourceTree = "<group>"; };
 		79B7A16628DC8C88005695E7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		79B7A16828DC8DDE005695E7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		79B7A16C28DC911F005695E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,35 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		7920647928DCC37D00416734 /* DMWithVM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DMWithVM;
+			sourceTree = "<group>";
+		};
+		7920647A28DCC38B00416734 /* DMWithCombine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DMWithCombine;
+			sourceTree = "<group>";
+		};
+		7920647B28DCC39900416734 /* DMWithStack */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DMWithStack;
+			sourceTree = "<group>";
+		};
+		7920647E28DCC3CE00416734 /* DMWithSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				7920647C28DCC3C800416734 /* DMWithSwiftUIView.swift */,
+			);
+			path = DMWithSwiftUI;
+			sourceTree = "<group>";
+		};
 		79B7A16528DC8C39005695E7 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +179,10 @@
 		79B7A17428DC970F005695E7 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				7920647A28DCC38B00416734 /* DMWithCombine */,
+				7920647B28DCC39900416734 /* DMWithStack */,
+				7920647E28DCC3CE00416734 /* DMWithSwiftUI */,
+				7920647928DCC37D00416734 /* DMWithVM */,
 				79B7A18628DCADA9005695E7 /* DMWithXIB */,
 				79B7A17928DC993E005695E7 /* SettingsTableViewController.swift */,
 				79B7A17E28DCA744005695E7 /* SettingsViewModel.swift */,
@@ -367,6 +402,7 @@
 				79B7A17828DC98AF005695E7 /* ExpediteViewController.swift in Sources */,
 				79B7A17F28DCA744005695E7 /* SettingsViewModel.swift in Sources */,
 				7920647828DCB98000416734 /* UITableViewCell+applyStyles.swift in Sources */,
+				7920647D28DCC3C800416734 /* DMWithSwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
