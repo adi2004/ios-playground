@@ -10,7 +10,6 @@ import SwiftUI
 @main
 struct DarkModeAppApp: App {
     @UIApplicationDelegateAdaptor var delegate: AppDelegate
-    @UISceneDelegate var sceneDelegate: SceneDelegate
 
     var body: some Scene {
         WindowGroup {
