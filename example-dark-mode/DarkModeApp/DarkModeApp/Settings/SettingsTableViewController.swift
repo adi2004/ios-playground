@@ -33,7 +33,9 @@ extension SettingsTableViewController {
 
 extension SettingsTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = viewModel.viewController(at: indexPath)
+        guard let vc = viewModel.viewController(at: indexPath) else {
+            return
+        }
         show(vc, sender: self)
     }
 }

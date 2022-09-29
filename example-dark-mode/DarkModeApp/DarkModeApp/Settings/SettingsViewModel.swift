@@ -9,10 +9,18 @@ import UIKit
 import SwiftUI
 
 struct SettingsViewModel {
-    let model = [
-        (text: "Dark Mode in SwiftUI", accesory: 1),
-        (text: "Dark Mode with XIB", accesory: 1),
-        (text: "Dark Mode with View Model", accesory: 1),
+    let model: [(text: String, handler: () -> UIViewController?)] = [
+        (text: "Dark Mode in SwiftUI", handler: {
+            let view = DMWithSwiftUIView()
+            let hostVC = UIHostingController(rootView: view)
+            return hostVC
+        }),
+        (text: "Dark Mode with XIB", handler: {
+            let vc = DMWithXIBTableViewController()
+            vc.title = "Dark Mode with XIB"
+            return vc
+        }),
+        (text: "Dark Mode with View Model", handler: { nil }),
     ]
     var sections = 1
     var rows: Int {
@@ -28,14 +36,7 @@ struct SettingsViewModel {
         return cell
     }
 
-    func viewController(at indexPath: IndexPath) -> UIViewController {
-        if indexPath.row == 0 {
-            let view = DMWithSwiftUIView()
-            let hostVC = UIHostingController(rootView: view)
-            return hostVC
-        }
-        let vc = DMWithXIBTableViewController()
-        vc.title = model[indexPath.row].text
-        return vc
+    func viewController(at indexPath: IndexPath) -> UIViewController? {
+        return  model[indexPath.row].handler()
     }
 }
