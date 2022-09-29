@@ -20,7 +20,11 @@ struct SettingsViewModel {
             vc.title = "Dark Mode with XIB"
             return vc
         }),
-        (text: "Dark Mode with View Model", handler: { nil }),
+        (text: "Dark Mode with View Model", handler: {
+            let vm = DMWithVMViewModel()
+            let vc = DMWithVMTableViewController(viewModel: vm)
+            return vc
+        }),
     ]
     var sections = 1
     var rows: Int {

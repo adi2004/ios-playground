@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790D6E3E28E5E3FF002A42AE /* DMWithVMTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D6E3D28E5E3FE002A42AE /* DMWithVMTableViewController.swift */; };
+		790D6E4028E5E419002A42AE /* DMWithVMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D6E3F28E5E419002A42AE /* DMWithVMViewModel.swift */; };
+		790D6E4228E5E5EB002A42AE /* UIColor+Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D6E4128E5E5EB002A42AE /* UIColor+Dynamic.swift */; };
+		790D6E4428E5E8A5002A42AE /* UserDefaults+Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D6E4328E5E8A5002A42AE /* UserDefaults+Preferences.swift */; };
+		790D6E4628E5EB0F002A42AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D6E4528E5EB0F002A42AE /* SceneDelegate.swift */; };
 		7920647828DCB98000416734 /* UITableViewCell+applyStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7920647728DCB98000416734 /* UITableViewCell+applyStyles.swift */; };
 		7920647D28DCC3C800416734 /* DMWithSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7920647C28DCC3C800416734 /* DMWithSwiftUIView.swift */; };
 		79B7A16728DC8C88005695E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B7A16628DC8C88005695E7 /* Main.storyboard */; };
@@ -46,6 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		790D6E3D28E5E3FE002A42AE /* DMWithVMTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMWithVMTableViewController.swift; sourceTree = "<group>"; };
+		790D6E3F28E5E419002A42AE /* DMWithVMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMWithVMViewModel.swift; sourceTree = "<group>"; };
+		790D6E4128E5E5EB002A42AE /* UIColor+Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Dynamic.swift"; sourceTree = "<group>"; };
+		790D6E4328E5E8A5002A42AE /* UserDefaults+Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Preferences.swift"; sourceTree = "<group>"; };
+		790D6E4528E5EB0F002A42AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7920647728DCB98000416734 /* UITableViewCell+applyStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+applyStyles.swift"; sourceTree = "<group>"; };
 		7920647C28DCC3C800416734 /* DMWithSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMWithSwiftUIView.swift; sourceTree = "<group>"; };
 		79B7A16628DC8C88005695E7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -99,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				7920647728DCB98000416734 /* UITableViewCell+applyStyles.swift */,
+				790D6E4128E5E5EB002A42AE /* UIColor+Dynamic.swift */,
+				790D6E4328E5E8A5002A42AE /* UserDefaults+Preferences.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -106,6 +118,8 @@
 		7920647928DCC37D00416734 /* DMWithVM */ = {
 			isa = PBXGroup;
 			children = (
+				790D6E3D28E5E3FE002A42AE /* DMWithVMTableViewController.swift */,
+				790D6E3F28E5E419002A42AE /* DMWithVMViewModel.swift */,
 			);
 			path = DMWithVM;
 			sourceTree = "<group>";
@@ -146,6 +160,7 @@
 				79B7A16C28DC911F005695E7 /* AppDelegate.swift */,
 				79FE3A0728DC866E006A76E0 /* ContentView.swift */,
 				79FE3A0528DC866E006A76E0 /* DarkModeAppApp.swift */,
+				790D6E4528E5EB0F002A42AE /* SceneDelegate.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -393,11 +408,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790D6E3E28E5E3FF002A42AE /* DMWithVMTableViewController.swift in Sources */,
 				79B7A16D28DC911F005695E7 /* AppDelegate.swift in Sources */,
+				790D6E4028E5E419002A42AE /* DMWithVMViewModel.swift in Sources */,
+				790D6E4428E5E8A5002A42AE /* UserDefaults+Preferences.swift in Sources */,
 				79B7A17628DC9733005695E7 /* DriveViewController.swift in Sources */,
+				790D6E4628E5EB0F002A42AE /* SceneDelegate.swift in Sources */,
 				79B7A17A28DC993E005695E7 /* SettingsTableViewController.swift in Sources */,
 				79B7A16B28DC90DD005695E7 /* ContentView.swift in Sources */,
 				79B7A18928DCADCE005695E7 /* DMWithXIBTableViewController.swift in Sources */,
+				790D6E4228E5E5EB002A42AE /* UIColor+Dynamic.swift in Sources */,
 				79B7A16A28DC90DA005695E7 /* DarkModeAppApp.swift in Sources */,
 				79B7A17828DC98AF005695E7 /* ExpediteViewController.swift in Sources */,
 				79B7A17F28DCA744005695E7 /* SettingsViewModel.swift in Sources */,

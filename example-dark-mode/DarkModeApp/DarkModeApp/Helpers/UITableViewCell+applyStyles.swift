@@ -9,8 +9,14 @@ import UIKit
 
 extension UITableViewCell {
     func applyStyles() {
-        self.backgroundColor = UIColor(named: "Background")
-        self.tintColor = UIColor(named: "Text")
-        self.textLabel?.textColor = UIColor(named: "Text")
+        self.backgroundColor = .dyBackground
+        self.tintColor = .dyText
+        self.textLabel?.textColor = .dyText
+    }
+}
+
+extension UITableViewController {
+    func applyStyles() {
+        self.view.backgroundColor = .dyBackground
     }
 }
