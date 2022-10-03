@@ -21,7 +21,8 @@ struct SettingsViewModel {
             return vc
         }),
         (text: "Dark Mode with View Model", handler: {
-            let vm = DMWithVMViewModel()
+            let style = UIApplication.shared.windows.first?.overrideUserInterfaceStyle
+            let vm = DMWithVMViewModel(style: style ?? .unspecified)
             let vc = DMWithVMTableViewController(viewModel: vm)
             return vc
         }),

@@ -18,6 +18,7 @@ class SceneDelegate: NSObject, ObservableObject, UIWindowSceneDelegate {
             let style = UIUserInterfaceStyle(rawValue: UserDefaults.standard.darkModePreference) ?? .unspecified
             self.window?.overrideUserInterfaceStyle = style
         } else {
+            // ?
         }
     }
 }

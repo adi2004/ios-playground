@@ -24,8 +24,22 @@ class DMWithVMTableViewController: UITableViewController {
         applyStyles()
     }
 
-    // MARK: - Table view data source
+    private static func updateUserInterfaceStyle(with style: UIUserInterfaceStyle) {
+        UIApplication.shared.windows.forEach { window in
+            UIView.transition(
+                with: window,
+                duration: 0.3,
+                options: .transitionCrossDissolve,
+                animations: {
+                    window.overrideUserInterfaceStyle = style
+                },
+                completion: nil)
+        }
+    }
+}
 
+// MARK: - UITableViewDataSource
+extension DMWithVMTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.model.count
     }
@@ -34,29 +48,25 @@ class DMWithVMTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         cell.selectionStyle = .none
-        cell.accessoryType = UIApplication.shared.windows.first?.overrideUserInterfaceStyle == viewModel.model[indexPath.row].style ? .checkmark : .none
+        cell.accessoryType = viewModel.model[indexPath.row].isSelected ? .checkmark : .none
         cell.textLabel?.text = viewModel.model[indexPath.row].name
         cell.applyStyles()
         return cell
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        (0 ..< viewModel.model.count)
-            .map { i in IndexPath(row: i, section: 0) }
-            .map { indexPath in tableView.cellForRow(at: indexPath)}
-            .forEach { cell in cell?.accessoryType = .none }
-        let cell = tableView.cellForRow(at: indexPath)
-        cell?.accessoryType = .checkmark
-        UIApplication.shared.windows.forEach { window in
-            UIView.transition(
-                with: window,
-                duration: 0.3,
-                options: .transitionCrossDissolve,
-                animations: {
-                    window.overrideUserInterfaceStyle = self.viewModel.model[indexPath.row].style
-                },
-                completion: nil
-            )
+        if let selectedIndex = viewModel.selectedIndex {
+            let selectedIndexPath = IndexPath(row: selectedIndex, section: 0)
+            tableView.cellForRow(at: selectedIndexPath)?.accessoryType = .none
+        }
+
+        viewModel.didSelectRow(at: indexPath.row) {
+            Self.updateUserInterfaceStyle(with: viewModel.model[indexPath.row].style)
+        }
+
+        if let newSelectedIndex = viewModel.selectedIndex {
+            let newSelectedIndexPath = IndexPath(row: newSelectedIndex, section: 0)
+            tableView.cellForRow(at: newSelectedIndexPath)?.accessoryType = .checkmark
         }
     }
 }
