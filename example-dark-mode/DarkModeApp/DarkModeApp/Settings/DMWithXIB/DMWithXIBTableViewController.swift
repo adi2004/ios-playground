@@ -1,10 +1,3 @@
-//
-//  DMWithXIBTableViewController.swift
-//  DarkModeApp
-//
-//  Created by adrian.florescu on 22.09.2022.
-//
-
 import UIKit
 
 class DMWithXIBTableViewController: UITableViewController {
@@ -13,13 +6,10 @@ class DMWithXIBTableViewController: UITableViewController {
         (name: "Dark", style: .dark),
         (name: "Light", style: .light)
     ]
+}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    // MARK: - Table view data source
-
+// MARK: - UITableViewDataSource
+extension DMWithXIBTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return model.count
     }
@@ -36,10 +26,10 @@ class DMWithXIBTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         (0 ..< model.count)
             .map { i in IndexPath(row: i, section: 0) }
-            .map { indexPath in tableView.cellForRow(at: indexPath)}
-            .forEach { cell in cell?.accessoryType = .none }
-        let cell = tableView.cellForRow(at: indexPath)
-        cell?.accessoryType = .checkmark
+            .forEach { iP in
+                let cell = tableView.cellForRow(at: iP)
+                cell?.accessoryType = iP == indexPath ? .checkmark : .none
+            }
         UIApplication.shared.windows.forEach { window in
             UserDefaults.standard.darkModePreference = self.model[indexPath.row].style.rawValue
             UIView.transition(

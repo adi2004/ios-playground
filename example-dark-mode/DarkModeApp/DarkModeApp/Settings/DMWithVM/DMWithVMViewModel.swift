@@ -1,10 +1,3 @@
-//
-//  DMWithVMViewModel.swift
-//  DarkModeApp
-//
-//  Created by adrian.florescu on 29.09.2022.
-//
-
 import UIKit
 
 class DMWithVMViewModel {
@@ -24,7 +17,7 @@ class DMWithVMViewModel {
         return model.firstIndex(where: \.isSelected)
     }
 
-    func didSelectRow(at index: Int, completion: () -> ()) {
+    func select(at index: Int, completion: () -> ()) {
         userDefaults.darkModePreference = model[index].style.rawValue
 
         if let selectedIndex = selectedIndex {

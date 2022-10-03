@@ -1,10 +1,3 @@
-//
-//  DMWithVMTableViewController.swift
-//  DarkModeApp
-//
-//  Created by adrian.florescu on 29.09.2022.
-//
-
 import UIKit
 
 class DMWithVMTableViewController: UITableViewController {
@@ -44,7 +37,6 @@ extension DMWithVMTableViewController {
         return viewModel.model.count
     }
 
-
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         cell.selectionStyle = .none
@@ -60,13 +52,9 @@ extension DMWithVMTableViewController {
             tableView.cellForRow(at: selectedIndexPath)?.accessoryType = .none
         }
 
-        viewModel.didSelectRow(at: indexPath.row) {
+        viewModel.select(at: indexPath.row) {
             Self.updateUserInterfaceStyle(with: viewModel.model[indexPath.row].style)
-        }
-
-        if let newSelectedIndex = viewModel.selectedIndex {
-            let newSelectedIndexPath = IndexPath(row: newSelectedIndex, section: 0)
-            tableView.cellForRow(at: newSelectedIndexPath)?.accessoryType = .checkmark
+            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
         }
     }
 }
