@@ -40,7 +40,7 @@ extension DMWithVMTableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         cell.selectionStyle = .none
-        cell.accessoryType = viewModel.model[indexPath.row].isSelected ? .checkmark : .none
+        cell.accessoryType = viewModel.selectedIndex == indexPath.row ? .checkmark : .none
         cell.textLabel?.text = viewModel.model[indexPath.row].name
         cell.applyStyles()
         return cell

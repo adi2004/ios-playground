@@ -1,30 +1,24 @@
 import UIKit
 
 class DMWithVMViewModel {
-    var model: [(name: String, style: UIUserInterfaceStyle, isSelected: Bool)]
-    let userDefaults: UserDefaults
+    let model: [(name: String, style: UIUserInterfaceStyle)]
+    var selectedIndex: Int?
+    private let userDefaults: UserDefaults
 
     init(style: UIUserInterfaceStyle, userDefaults: UserDefaults = .standard) {
         self.userDefaults = userDefaults
 
         self.model = [
-            (name: "Unspecified", style: .unspecified, isSelected: style == .unspecified),
-            (name: "Dark", style: .dark, isSelected: style == .dark),
-            (name: "Light", style: .light, isSelected: style == .light) ]
-    }
+            (name: "Unspecified", style: .unspecified),
+            (name: "Dark", style: .dark),
+            (name: "Light", style: .light) ]
 
-    var selectedIndex: Int? {
-        return model.firstIndex(where: \.isSelected)
+        self.selectedIndex = model.firstIndex(where: { $0.style == style })
     }
 
     func select(at index: Int, completion: () -> ()) {
         userDefaults.darkModePreference = model[index].style.rawValue
-
-        if let selectedIndex = selectedIndex {
-            model[selectedIndex].isSelected = false
-        }
-        model[index].isSelected = true
-
+        selectedIndex = index
         completion()
     }
 }
