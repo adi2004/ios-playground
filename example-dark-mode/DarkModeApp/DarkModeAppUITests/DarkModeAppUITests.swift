@@ -26,6 +26,14 @@ class DarkModeAppUITests: XCTestCase {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
+        app.tabBars["Tab Bar"].buttons["Settings"].tap()
+        let tablesQuery = app.tables
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Dark Mode with View Model"]/*[[".cells.staticTexts[\"Dark Mode with View Model\"]",".staticTexts[\"Dark Mode with View Model\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        let darkStaticText = tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Dark"]/*[[".cells.staticTexts[\"Dark\"]",".staticTexts[\"Dark\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        darkStaticText.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Unspecified"]/*[[".cells.staticTexts[\"Unspecified\"]",".staticTexts[\"Unspecified\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        darkStaticText.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Light"]/*[[".cells.staticTexts[\"Light\"]",".staticTexts[\"Light\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
 
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

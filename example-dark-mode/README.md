@@ -1,7 +1,5 @@
 # Dark Mode
 Scope:
-- create an app with a tabbar: drive, dispatch, settings
-- in settings: darkmode
 - for darkmode implement it using
     - swift ui
     - storyboard

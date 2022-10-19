@@ -146,6 +146,13 @@
 			path = DMWithSwiftUI;
 			sourceTree = "<group>";
 		};
+		79B14A7C28FFFED10036A853 /* MultipleTimers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MultipleTimers;
+			sourceTree = "<group>";
+		};
 		79B7A16528DC8C39005695E7 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +201,7 @@
 		79B7A17428DC970F005695E7 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				79B14A7C28FFFED10036A853 /* MultipleTimers */,
 				7920647A28DCC38B00416734 /* DMWithCombine */,
 				7920647B28DCC39900416734 /* DMWithStack */,
 				7920647E28DCC3CE00416734 /* DMWithSwiftUI */,
