@@ -26,6 +26,18 @@ struct SettingsViewModel {
             let vc = DMWithVMTableViewController(viewModel: vm)
             return vc
         }),
+        (text: "Collection view with many cells and timers", handler: {
+            let vc = CollectionViewController(nibName: "CollectionViewController", bundle: nil)
+            return vc
+        }),
+        (text: "Collection view with one timer", handler: {
+            let vc = CollectionOneTimerViewController(nibName: "CollectionOneTimerViewController", bundle: nil)
+            return vc
+        }),
+        (text: "Collection view with one timer and multiple subscriptions", handler: {
+            let vc = OneTimerMultipleSubscriptionsViewController(nibName: "OneTimerMultipleSubscriptionsViewController", bundle: nil)
+            return vc
+        })
     ]
     var sections = 1
     var rows: Int {
